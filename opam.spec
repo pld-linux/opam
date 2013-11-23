@@ -77,8 +77,10 @@ ln -s %{SOURCE5} src_ext
 ln -s %{SOURCE6} src_ext
 
 %build
-%configure
-%{__make} all opt -j1
+%configure \
+	FETCH=curl
+%{__make} all opt -j1 \
+	FETCH=/bin/false
 
 %if %{with doc}
 # make doc
