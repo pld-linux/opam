@@ -26,6 +26,7 @@ Source6:	http://erratique.ch/software/cmdliner/releases/cmdliner-0.9.3.tbz
 # Source6-md5:	d63dd3b03966d65fc242246859c831c7
 URL:		http://opam.ocamlpro.com/
 BuildRequires:	hevea
+BuildRequires:	ncurses-devel
 BuildRequires:	ocaml
 BuildRequires:	ocaml-camlp4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
