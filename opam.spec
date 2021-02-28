@@ -59,9 +59,7 @@ yourself in at least one of these profiles:
 Summary:	Documentation files for %{name}
 Group:		Development
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description doc
 The %{name}-doc package contains documentation for using %{name}.
